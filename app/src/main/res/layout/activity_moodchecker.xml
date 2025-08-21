@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".moodchecker">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MoodCheckerActivity"
+        android:padding="16dp">
+
+        <!-- Spinner สำหรับเลือกหัวข้อ -->
+
+        <Spinner
+            android:id="@+id/spinnerMood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- ScrollView ครอบ TextView -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="588dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_bg"
+                    android:padding="16dp"
+                    android:text="ข้อมูลจะแสดงที่นี่"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-1dp"
+        android:layout_y="675dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hbt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/home"
+                android:fontFamily="sans-serif-black"
+                android:text="HOME"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/qbt"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon__fever"
+                android:fontFamily="sans-serif-black"
+                android:text="MOOD CHECKER"
+                android:textColor="#020202"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/ibt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon__info"
+                android:fontFamily="sans-serif-black"
+                android:text="ABOUT"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/rbt"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/environmental"
+                android:fontFamily="sans-serif-black"
+                android:text="REFERENCE"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</AbsoluteLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-1dp"
+        android:layout_y="28dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="แบบทดสอบสุขภาพจิต"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="332dp"
+        android:layout_height="190dp"
+        android:layout_x="27dp"
+        android:layout_y="93dp"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/who" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_x="205dp"
+        android:layout_y="487dp"
+        android:backgroundTint="#FFE4E1"
+        android:drawableTop="@drawable/file_text"
+        android:fontFamily="sans-serif-black"
+        android:text="แบบประเมินความเครียด"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:cornerRadius="20sp" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_x="25dp"
+        android:layout_y="307dp"
+        android:backgroundTint="#FFE4E1"
+        android:drawableTop="@drawable/file_text"
+        android:fontFamily="sans-serif-black"
+        android:text="แบบประเมินโรคซึมเศร้า"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:cornerRadius="20sp" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_x="26dp"
+        android:layout_y="487dp"
+        android:backgroundTint="#FFE4E1"
+        android:drawableTop="@drawable/file_text"
+        android:fontFamily="sans-serif-black"
+        android:text="แบบประเมินโรคแพนิค"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:cornerRadius="20sp" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_x="204dp"
+        android:layout_y="307dp"
+        android:backgroundTint="#FFE4E1"
+        android:drawableTop="@drawable/file_text"
+        android:fontFamily="sans-serif-black"
+        android:text="แบบประเมินโรควิตกกังวล"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:cornerRadius="20sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-1dp"
+        android:layout_y="675dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hbt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/home"
+                android:fontFamily="sans-serif-black"
+                android:text="HOME"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/qbt"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon__fever"
+                android:fontFamily="sans-serif-black"
+                android:text="MOOD CHECKER"
+                android:textColor="#020202"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/ibt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon__info"
+                android:fontFamily="sans-serif-black"
+                android:text="ABOUT"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/rbt"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/environmental"
+                android:fontFamily="sans-serif-black"
+                android:text="REFERENCE"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</AbsoluteLayout>

@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gd_2"
+    tools:context=".Quiz2">
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_y="0dp">
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_x="0dp"
+            android:layout_y="-1dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="แบบทดสอบโรควิตกกังวล"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_x="5dp"
+            android:layout_y="90dp"
+            android:background="@drawable/rounded_bg"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="1 ไม่มีเลย 2 เป็นบางวัน 3 เป็นบ่อย 4 เป็นทุกวัน"
+            android:textSize="18sp" />
+    </AbsoluteLayout>
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="478dp"
+        android:layout_x="0dp"
+        android:layout_y="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:text="คำถามที่ 1 รู้สึกวิตกกังวลหรือกระวนกระวาย"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbt1_1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="1"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt1_2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="2"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt1_3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="3"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt1_4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="4"
+                        android:textColor="@color/white"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="คำถามที่ 2 ไม่สามารถหยุดหรือควบคุมความวิตกกังวลได้"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbt2_1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="1"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt2_2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="2"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt2_3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="3"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt2_4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="4"
+                        android:textColor="@color/white"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="คำถามที่ 3 กังวลมากเกินไปเกี่ยวกับเรื่องต่าง ๆ"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbt3_1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="1"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt3_2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="2"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt3_3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="3"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt3_4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="4"
+                        android:textColor="@color/white"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="คำถามที่ 4 รู้สึกผ่อนคลายได้ยากขึ้นหรือผ่อนคลายตัวเองลำบากมากขึ้น"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbt4_1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="1"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt4_2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="2"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt4_3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="3"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt4_4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="4"
+                        android:textColor="@color/white"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="คำถามที่ 5 รู้สึกกระสับกระส่ายจนนั่งนิ่ง ๆ ไม่ได้"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbt5_1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="1"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt5_2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="2"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt5_3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="3"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt5_4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="4"
+                        android:textColor="@color/white"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="คำถามที่ 6 รู้สึกหงุดหงิดหรือโมโหง่าย"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbt6_1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="1"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt6_2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="2"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt6_3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="3"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt6_4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="4"
+                        android:textColor="@color/white"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="คำถามที่ 7 รู้สึกกลัวเหมือนกับว่าจะมีเรื่องเลวร้ายเกิดขึ้น"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbt7_1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="1"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt7_2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="2"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt7_3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="3"
+                        android:textColor="@color/white"/>
+
+                    <RadioButton
+                        android:id="@+id/rbt7_4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="4"
+                        android:textColor="@color/white"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/rmbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="SUBMIT"
+                android:textColor="#000000"
+                app:cornerRadius="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-1dp"
+        android:layout_y="675dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hbt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/home"
+                android:fontFamily="sans-serif-black"
+                android:text="HOME"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/qbt"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon__fever"
+                android:fontFamily="sans-serif-black"
+                android:text="MOOD CHECKER"
+                android:textColor="#020202"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/ibt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon__info"
+                android:fontFamily="sans-serif-black"
+                android:text="ABOUT"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/rbt"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/environmental"
+                android:fontFamily="sans-serif-black"
+                android:text="REFERENCE"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</AbsoluteLayout>

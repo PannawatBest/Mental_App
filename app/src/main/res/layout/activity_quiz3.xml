@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bd_gd_3"
+    tools:context=".Quiz3">
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_y="0dp">
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_x="0dp"
+            android:layout_y="-1dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="แบบทดสอบโรคแพนิค"
+            android:textSize="24sp" />
+
+    </AbsoluteLayout>
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="587dp"
+        android:layout_x="0dp"
+        android:layout_y="91dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:text="คำถามที่ 1 คุณมีอาการแพนิคแบบเต็มรูปแบบหรืออาการบางส่วนมากแค่ไหน"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbt1_1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="0"
+                        android:text="ไม่มีอาการแพนิคเลย" />
+
+                    <RadioButton
+                        android:id="@+id/rbt1_2"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="ไม่มีอาการแพนิคแบบเต็มรูปแบบ แต่มีอาการบางส่วนไม่เกิน 1 ครั้งต่อวัน" />
+
+                    <RadioButton
+                        android:id="@+id/rbt1_3"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="มีอาการแพนิคแบบเต็มรูปแบบ 1-2 ครั้ง หรือมีอาการบางส่วนหลายครั้งต่อวัน" />
+
+                    <RadioButton
+                        android:id="@+id/rbt1_4"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text=" มีอาการแพนิคแบบเต็มรูปแบบมากกว่า 2 ครั้ง แต่เฉลี่ยแล้วไม่เกิน 1 ครั้งต่อวัน" />
+
+                    <RadioButton
+                        android:id="@+id/rbt1_5"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text=" มีอาการแพนิคแบบเต็มรูปแบบมากกว่า 2 ครั้ง แต่เฉลี่ยแล้วไม่เกิน 1 ครั้งต่อวัน" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:text="คำถามที่ 2 หากคุณมีอาการแพนิคเต็มรูปแบบ หรืออาการบางส่วน อาการเหล่านั้นรบกวนคุณมากน้อยแค่ไหน"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbt2_1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="0"
+                        android:text="ไม่รบกวนเลย หรือไม่มีอาการแพนิคเต็มรูปแบบหรืออาการบางส่วน" />
+
+                    <RadioButton
+                        android:id="@+id/rbt2_2"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="รบกวนเล็กน้อย (ไม่รุนแรงมาก)" />
+
+                    <RadioButton
+                        android:id="@+id/rbt2_3"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="รบกวนปานกลาง (รุนแรง แต่ยังสามารถรับมือได้)" />
+
+                    <RadioButton
+                        android:id="@+id/rbt2_4"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="รบกวนรุนแรง (รุนแรงมาก)" />
+
+                    <RadioButton
+                        android:id="@+id/rbt2_5"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="รบกวนรุนแรงมาก (เกิดความทุกข์ทรมานอย่างมากในทุกครั้งที่มีอาการ)" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:text="คำถามที่ 3 คุณกังวลหรือรู้สึกกลัวว่าจะมีอาการแพนิคอีกครั้งมากน้อยแค่ไหน"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbt3_1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="0"
+                        android:text="ไม่กังวลเลย" />
+
+                    <RadioButton
+                        android:id="@+id/rbt3_2"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="เป็นบางครั้งหรือกังวลเล็กน้อย" />
+
+                    <RadioButton
+                        android:id="@+id/rbt3_3"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="เป็นบ่อยครั้งหรือกังวลปานกลาง" />
+
+                    <RadioButton
+                        android:id="@+id/rbt3_4"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="เป็นบ่อยมากหรือกังวลจนรบกวน" />
+
+                    <RadioButton
+                        android:id="@+id/rbt3_5"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="เป็นเกือบตลอดเวลาจนส่งผลต่อการใช้ชีวิต" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:text="คำถามที่ 4 มีสถานที่หรือสถานการณ์ใดบ้าง (เช่น การเดินทางด้วยรถสาธารณะ โรงภาพยนตร์ ฝูงชน สะพาน อุโมงค์ ศูนย์การค้า การอยู่คนเดียว) ที่คุณหลีกเลี่ยงหรือรู้สึกกลัวว่าจะมีอาการแพนิคเกิดขึ้น"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbt4_1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="0"
+                        android:text="ไม่มีอาการกลัวหรือหลีกเลี่ยงสถานการณ์หรือกิจกรรมใดๆ" />
+
+                    <RadioButton
+                        android:id="@+id/rbt4_2"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="มีอาการกลัวและ/หรือหลีกเลี่ยงบ้าง แต่โดยทั่วไปสามารถเผชิญหน้าหรืออดทนกับสถานการณ์ได้ โดยมีความกังวลเพียงเล็กน้อย ไม่มีผลกระทบต่อการใช้ชีวิตประจำวันมากนัก" />
+
+                    <RadioButton
+                        android:id="@+id/rbt4_3"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="มีการหลีกเลี่ยงอย่างเห็นได้ชัด แต่ยังสามารถรับมือได้ สามารถเผชิญหน้ากับสถานการณ์บางอย่างได้ หากมีเพื่อนร่วมทาง" />
+
+                    <RadioButton
+                        android:id="@+id/rbt4_4"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="มีการหลีกเลี่ยงอย่างมาก ส่งผลต่อการใช้ชีวิตและการทำงานอย่างมีนัยสำคัญ" />
+
+                    <RadioButton
+                        android:id="@+id/rbt4_5"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="มีการหลีกเลี่ยงอย่างรุนแรงจนไม่สามารถใช้ชีวิตได้ตามปกติ" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:text="คำถามที่ 5 มีกิจกรรมใดบ้าง (เช่น ออกแรงกาย ความสัมพันธ์ทางเพศ อาบน้ำอุ่น ดื่มกาแฟ ดูหนังตื่นเต้นหรือหนังสยองขวัญ) ที่คุณรู้สึกไม่สบายใจ รู้สึกกลัว อยากหลีกเลี่ยง หรือหยุดทำกิจกรรมนั้น เนื่องจากกังวลว่าจะทำให้เกิดอาการทางกายเหมือนกับตอนที่มีอาการแพนิค หรือคุณกลัวว่ากิจกรรมนั้นอาจทำให้เกิดอาการแพนิค"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbt5_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:tag="0"
+                        android:text="ไม่มีอาการกลัวหรือหลีกเลี่ยงสถานการณ์หรือกิจกรรมใดๆ" />
+
+                    <RadioButton
+                        android:id="@+id/rbt5_2"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="มีอาการกลัวและ/หรือหลีกเลี่ยงบ้าง แต่โดยทั่วไปสามารถเผชิญหน้าหรืออดทนกับสถานการณ์ได้ โดยมีความกังวลเพียงเล็กน้อย ไม่มีผลกระทบต่อการใช้ชีวิตประจำวันมากนัก" />
+
+                    <RadioButton
+                        android:id="@+id/rbt5_3"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="มีการหลีกเลี่ยงอย่างเห็นได้ชัด แต่ยังสามารถรับมือได้ สามารถเผชิญหน้ากับสถานการณ์บางอย่างได้ แต่มีการจำกัดมากขึ้น" />
+
+                    <RadioButton
+                        android:id="@+id/rbt5_4"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="มีการหลีกเลี่ยงอย่างมาก ส่งผลต่อการใช้ชีวิตและการทำงานอย่างมีนัยสำคัญ" />
+
+                    <RadioButton
+                        android:id="@+id/rbt5_5"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="มีการหลีกเลี่ยงอย่างรุนแรงจนไม่สามารถใช้ชีวิตได้ตามปกติ" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:text="คำถามที่ 6 อาการต่างๆ ที่กล่าวมาข้างต้น (อาการแพนิคแบบเต็มรูปแบบ อาการบางส่วน ความกังวลเกี่ยวกับอาการ และความกลัวต่อสถานการณ์และกิจกรรมต่างๆ เนื่องจากอาการแพนิค) ส่งผลต่อความสามารถในการทำงานหรือหน้าที่ความรับผิดชอบที่บ้านอย่างไร (หากความรับผิดชอบที่ทำงานหรือที่บ้านของคุณน้อยกว่าปกติในช่วงสัปดาห์ที่ผ่านมา ให้ตอบเหมือนว่าความรับผิดชอบต่างๆ เป็นไปตามปกติ)"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbt6_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="0"
+                        android:textColor="@color/white"
+                        android:text="ไม่มีผลกระทบต่อการทำงานหรือความรับผิดชอบในบ้าน" />
+
+                    <RadioButton
+                        android:id="@+id/rbt6_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:textColor="@color/white"
+                        android:text="มีผลกระทบเล็กน้อยต่อการทำงานหรือความรับผิดชอบในบ้าน แต่ยังคงสามารถทำสิ่งต่างๆ ได้เกือบทุกอย่าง หากไม่มีปัญหาเหล่านี้" />
+
+                    <RadioButton
+                        android:id="@+id/rbt6_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:textColor="@color/white"
+                        android:text="มีผลกระทบอย่างมากต่อการทำงานหรือความรับผิดชอบในบ้าน แต่ยังสามารถจัดการสิ่งต่างๆ ที่จำเป็นได้" />
+
+                    <RadioButton
+                        android:id="@+id/rbt6_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:textColor="@color/white"
+                        android:text="มีผลกระทบอย่างรุนแรงต่อการทำงานหรือความรับผิดชอบในบ้าน มีสิ่งสำคัญหลายอย่างที่ไม่สามารถทำได้เนื่องจากปัญหาเหล่านี้" />
+
+                    <RadioButton
+                        android:id="@+id/rbt6_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:textColor="@color/white"
+                        android:text="มีผลกระทบอย่างรุนแรงจนไม่สามารถทำงานหรือรับผิดชอบความรับผิดชอบในบ้านได้เลย" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#4D454545"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:text="คำถามที่ 7 อาการแพนิคแบบเต็มรูปแบบ อาการบางส่วน ความกังวลเกี่ยวกับอาการ และความกลัวต่อสถานการณ์และกิจกรรมต่างๆ เนื่องจากอาการแพนิค ส่งผลต่อการใช้ชีวิตในสังคมของคุณอย่างไร"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbt7_1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="0"
+                        android:text="ไม่มีผลกระทบ" />
+
+                    <RadioButton
+                        android:id="@+id/rbt7_2"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="มีผลกระทบเล็กน้อยต่อกิจกรรมทางสังคม แต่ยังคงสามารถทำสิ่งต่างๆ ได้เกือบทุกอย่าง หากไม่มีปัญหาเหล่านี้" />
+
+                    <RadioButton
+                        android:id="@+id/rbt7_3"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="มีผลกระทบอย่างมากต่อกิจกรรมทางสังคม แต่ยังสามารถจัดการสิ่งต่างๆ ได้มากที่สุดหากพยายาม" />
+
+                    <RadioButton
+                        android:id="@+id/rbt7_4"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="มีผลกระทบอย่างรุนแรงต่อกิจกรรมทางสังคม มีกิจกรรมทางสังคมหลายอย่างที่ไม่สามารถทำได้เนื่องจากปัญหาเหล่านี้" />
+
+                    <RadioButton
+                        android:id="@+id/rbt7_5"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="มีผลกระทบอย่างรุนแรงจนไม่สามารถทำกิจกรรมทางสังคมได้เลย" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/rmbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="SUBMIT"
+                android:textColor="#000000"
+                app:cornerRadius="10sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-1dp"
+        android:layout_y="675dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hbt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/home"
+                android:fontFamily="sans-serif-black"
+                android:text="HOME"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/qbt"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon__fever"
+                android:fontFamily="sans-serif-black"
+                android:text="MOOD CHECKER"
+                android:textColor="#020202"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/ibt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon__info"
+                android:fontFamily="sans-serif-black"
+                android:text="ABOUT"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/rbt"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/environmental"
+                android:fontFamily="sans-serif-black"
+                android:text="REFERENCE"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</AbsoluteLayout>

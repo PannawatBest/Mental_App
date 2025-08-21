@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Result">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/quizTitle"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="ชื่อแบบทดสอบ"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="การทดสอบนี้ควรใช้สำหรับการคัดกรองและติดตามความรุนแรงของอาการ และไม่สามารถแทนการประเมิน และวินิจฉัยทางคลินิกได้"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="326dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="คะแนนรวมของคุณคือ: 0"
+                android:textColor="#3949AB"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/ak"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="อาการ"
+                android:textColor="#F4511E"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/akm"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="อาการ"
+                android:textColor="#E53935"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rmbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="READ MORE"
+                android:textColor="#000000"
+                app:cornerRadius="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-1dp"
+        android:layout_y="675dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hbt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/home"
+                android:fontFamily="sans-serif-black"
+                android:text="HOME"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/qbt"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon__fever"
+                android:fontFamily="sans-serif-black"
+                android:text="MOOD CHECKER"
+                android:textColor="#020202"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/ibt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon__info"
+                android:fontFamily="sans-serif-black"
+                android:text="ABOUT"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+
+            <Button
+                android:id="@+id/rbt"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:drawableTop="@drawable/icon_recommend"
+                android:fontFamily="sans-serif-black"
+                android:text="RECOMMAND"
+                android:textColor="#000000"
+                app:cornerRadius="0sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</AbsoluteLayout>
+
